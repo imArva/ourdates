@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffc8dd">
+  <title>Date ♡ Our Little Dates</title>
+  <script type="module" crossorigin src="/assets/form-D7Tri3Nf.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/lib-BmfH8Z2i.js">
+  <link rel="stylesheet" crossorigin href="/assets/lib-CBzpKJRD.css">
+</head>
+<body class="min-h-screen bg-bg font-sans text-slate-700">
+  <main class="mx-auto max-w-md px-4 pt-6 pb-28">
+    <h2 id="heading" class="serif mb-3 text-2xl">Add New Date ♡</h2>
+
+    <form id="f" class="card space-y-3">
+      <label class="block">Title<input name="title" required class="inp" placeholder="Dinner at Kintan"></label>
+      <label class="block">Date<input name="scheduled_on" type="date" required class="inp"></label>
+      <div class="grid grid-cols-2 gap-3">
+        <label>Start<input name="start_time" type="time" class="inp"></label>
+        <label>End<input name="end_time" type="time" class="inp"></label>
+      </div>
+      <label class="block">Location<input name="location" class="inp" placeholder="Kintan Buffet"></label>
+
+      <div>Type
+        <div class="mt-1 flex flex-wrap gap-3">
+          <label><input type="radio" name="type" value="date"> Date</label>
+          <label><input type="radio" name="type" value="anniversary"> Anniversary</label>
+          <label><input type="radio" name="type" value="birthday"> Birthday</label>
+          <label><input type="radio" name="type" value="special"> Special</label>
+        </div>
+      </div>
+
+      <label class="block">Note<textarea name="note" rows="3" class="inp" placeholder="Finally trying this place together..."></textarea></label>
+
+      <div>Reminder
+        <div class="mt-1 flex gap-4">
+          <label><input type="checkbox" name="rem" value="1440"> 1 day before</label>
+          <label><input type="checkbox" name="rem" value="60"> 1 hour before</label>
+        </div>
+      </div>
+
+      <button class="btn w-full">Save Date ♡</button>
+      <a href="/" class="block text-center text-sm underline">Cancel</a>
+    </form>
+  </main>
+</body>
+</html>

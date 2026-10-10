@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffc8dd">
+  <title>Groups ♡ Our Little Dates</title>
+  <script type="module" crossorigin src="/assets/groups-DdpB485a.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/lib-BmfH8Z2i.js">
+  <link rel="stylesheet" crossorigin href="/assets/lib-CBzpKJRD.css">
+</head>
+<body class="min-h-screen bg-bg font-sans text-slate-700">
+  <main class="mx-auto max-w-md px-4 pt-6 pb-28">
+    <h2 class="serif mb-3 text-2xl">Groups</h2>
+    <p id="notice" class="mb-3 hidden rounded-2xl bg-soft p-3 text-sm">You are not in a group yet. Create one or join with an invite to start planning dates ♡</p>
+    <div id="list"></div>
+
+    <section class="card mt-4 space-y-2">
+      <h3 class="font-bold">Create a group</h3>
+      <form id="create" class="flex gap-2">
+        <input name="group_name" required maxlength="60" class="inp mt-0" placeholder="Group name">
+        <button class="btn">Create</button>
+      </form>
+    </section>
+
+    <section class="card mt-4 space-y-2">
+      <h3 class="font-bold">Join with an invite</h3>
+      <form id="join" class="flex gap-2">
+        <input name="key" required class="inp mt-0" placeholder="Paste invite link or code">
+        <button class="btn">Join</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

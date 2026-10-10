@@ -1,0 +1,1 @@
+import{_ as e,h as t,l as n,s as r}from"./lib-BmfH8Z2i.js";i();async function i(){await t(),n(`dates`),document.getElementById(`list`).innerHTML=(await r()).map(e).join(``)||`<p class="text-sm">No dates yet.</p>`}

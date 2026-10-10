@@ -1,0 +1,3 @@
+import{b as e,d as t,g as n,l as r,y as i}from"./lib-BmfH8Z2i.js";a();async function a(){await n(),r(`groups`);let a=new URLSearchParams(location.search).get(`key`),o=document.getElementById(`box`);if(!a)return o.innerHTML=`<p>This invite link is missing its code.</p>`;o.innerHTML=`
+    <p>Join this group to share dates, the calendar, and reminders.</p>
+    <button id="join" class="btn w-full">Join group ♡</button>`,document.getElementById(`join`).onclick=async n=>{n.target.disabled=!0;try{let n=t(await i.rpc(`join_group`,{p_key:a}));e(n),location.href=`/group.html?id=`+n}catch{n.target.disabled=!1}}}
